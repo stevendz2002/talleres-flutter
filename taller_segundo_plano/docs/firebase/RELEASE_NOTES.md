@@ -2,7 +2,7 @@
 
 ## v1.0.1 (Build 2) — 2026-05-03
 
-**Responsable:** Steven Daza  
+**Responsable:** Steven   
 **Fecha de distribución:** 2026-05-03  
 **Canal:** QA_Clase  
 

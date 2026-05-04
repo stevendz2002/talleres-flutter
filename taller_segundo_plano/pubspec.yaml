@@ -7,7 +7,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # version: MAJOR.MINOR.PATCH+BUILD_NUMBER
 # versionName (MAJOR.MINOR.PATCH) → visible al usuario
 # versionCode (BUILD_NUMBER)      → entero incremental para Firebase/Play Store
-version: 1.0.1+2
+version: 1.0.2+3
 
 environment:
   sdk: ^3.11.0
