@@ -1,0 +1,106 @@
+======================================================
+ENTREGABLE — Firebase App Distribution
+Taller: Segundo Plano - Flutter
+Fecha: 2026-05-03
+Responsable: Steven Daza
+======================================================
+
+REPOSITORIO
+-----------
+URL: https://github.com/stevendz2002/talleres-flutter
+Rama trabajada: feature/app_distribution
+Branch base: dev
+PR: feature/app_distribution → dev → main
+
+======================================================
+ENLACE DE INSTALACIÓN (Firebase App Distribution)
+======================================================
+[PENDIENTE - Completar con el enlace generado por Firebase App Distribution
+ tras subir el APK en Firebase Console → App Distribution → Releases]
+
+Ejemplo de cómo se verá el enlace:
+https://appdistribution.firebase.google.com/testerapps/...
+
+======================================================
+RELEASE NOTES — v1.0.0 (Build 1)
+======================================================
+Versión: 1.0.0+1
+Fecha: 2026-05-03
+Responsable: Steven Daza
+Canal: QA_Clase
+Tester: dduran@uceva.edu.co
+
+Cambios:
+- Primera release de distribución vía Firebase App Distribution.
+- Funcionalidades: Future/async, Timer e Isolate.
+- APK generado con: flutter build apk --release
+- Firmado con keystore debug (entorno QA).
+
+Instrucciones:
+1. Abrir correo de Firebase (noreply@firebase.com).
+2. Hacer clic en "Download the latest build".
+3. Instalar Firebase App Tester (primera vez).
+4. Instalar Taller Segundo Plano.
+5. Abrir la app y verificar las 3 pantallas.
+
+No se requieren credenciales de acceso (app pública de demostración).
+
+======================================================
+RELEASE NOTES — v1.0.1 (Build 2)
+======================================================
+Versión: 1.0.1+2
+Fecha: 2026-05-03
+Responsable: Steven Daza
+Canal: QA_Clase
+Tester: dduran@uceva.edu.co
+
+Cambios respecto a v1.0.0:
+- Fix: permiso INTERNET añadido a AndroidManifest.xml.
+- Docs: guía Firebase App Distribution integrada (docs/firebase/).
+- Docs: bitácora QA añadida (docs/qa/QA_LOG.md).
+- README actualizado con flujo de distribución y versionado.
+
+Instrucciones:
+1. Al recibir notificación de Firebase App Tester, aceptar actualización.
+2. O desinstalar v1.0.0 e instalar v1.0.1 desde el enlace de distribución.
+3. Verificar que la versión en About/pantalla refleje 1.0.1.
+
+No se requieren credenciales de acceso.
+
+======================================================
+NOTAS DE VERSIONADO
+======================================================
+Esquema: MAJOR.MINOR.PATCH+BUILD_NUMBER
+  - MAJOR.MINOR.PATCH → versionName (visible al usuario)
+  - BUILD_NUMBER      → versionCode (entero incremental, Firebase/Play Store)
+
+Historial:
+  v1.0.0+1 → Primera distribución (2026-05-03)
+  v1.0.1+2 → Actualización incremental con fix y docs (2026-05-03)
+
+======================================================
+CÓMO REPLICAR EL PROCESO
+======================================================
+1. Clonar el repo:
+   git clone https://github.com/stevendz2002/talleres-flutter.git
+   cd talleres-flutter/taller_segundo_plano
+
+2. Instalar dependencias:
+   flutter pub get
+
+3. Generar APK de release:
+   flutter build apk --release
+   # APK en: build/app/outputs/flutter-apk/app-release.apk
+
+4. Subir en Firebase Console:
+   - Ir a App Distribution → Releases → Upload
+   - Seleccionar app-release.apk
+   - Agregar release notes
+   - Asignar grupo QA_Clase
+   - Distribuir
+
+5. Para actualización:
+   - Cambiar version en pubspec.yaml (ej: 1.0.1+2 → 1.0.2+3)
+   - Repetir desde el paso 3
+
+Documentación completa: docs/firebase/FIREBASE_SETUP.md
