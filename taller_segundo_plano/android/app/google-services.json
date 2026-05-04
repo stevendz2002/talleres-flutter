@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950709413936",
+    "project_id": "app-distribution-9a4cd",
+    "storage_bucket": "app-distribution-9a4cd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950709413936:android:b92210d52f75a1522ba5f5",
+        "android_client_info": {
+          "package_name": "com.example.taller_segundo_plano"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbsjCRBdbtTCoX3R8QS51c5eH6DuDiLlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

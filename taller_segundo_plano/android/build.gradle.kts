@@ -1,9 +1,3 @@
-plugins {
-    // Google Services plugin — declarado aquí con apply false,
-    // se aplica en android/app/build.gradle.kts
-    id("com.google.gms.google-services") version "4.4.4" apply false
-}
-
 allprojects {
     repositories {
         google()
