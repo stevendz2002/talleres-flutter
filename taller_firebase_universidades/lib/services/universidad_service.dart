@@ -12,15 +12,14 @@ class UniversidadService {
   }
 
   Future<void> createUniversidad(Universidad universidad) async {
-    await _universidadesCollection.add(universidad.toFirestore());
+    await _universidadesCollection.doc(universidad.nit).set(universidad.toFirestore());
   }
 
-  // Optional: Update and Delete methods if needed for full CRUD
-  Future<void> updateUniversidad(String id, Universidad universidad) async {
-    await _universidadesCollection.doc(id).update(universidad.toFirestore());
+  Future<void> updateUniversidad(String nit, Universidad universidad) async {
+    await _universidadesCollection.doc(nit).set(universidad.toFirestore());
   }
 
-  Future<void> deleteUniversidad(String id) async {
-    await _universidadesCollection.doc(id).delete();
+  Future<void> deleteUniversidad(String nit) async {
+    await _universidadesCollection.doc(nit).delete();
   }
 }
